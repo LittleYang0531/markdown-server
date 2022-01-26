@@ -1,5 +1,3 @@
-[Pixiv: 72086659]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/72086659_p0.jpg'
-
 ## [USACO20OPEN] Exercise G 做题记录
 
 ### 题目描述:
