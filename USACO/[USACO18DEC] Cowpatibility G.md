@@ -1,5 +1,3 @@
-[Pixiv: 88865174]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/88865174_p0.jpg'
-
 ## [USACO18DEC] Cowpatibility G 做题记录
 
 ### 题目描述:
