@@ -1,5 +1,3 @@
-[Pixiv: 86401376]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/86401376_p0.jpg'
-
 ## [USACO19DEC] Milk Pumping G 做题记录
 
 ### 题目描述:
