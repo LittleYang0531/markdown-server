@@ -1,5 +1,3 @@
-[Pixiv: 91403647]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/91403647_p0.jpg'
-
 # COCI2020-2021#2 做题记录
 
 ## T1 Crtanje
