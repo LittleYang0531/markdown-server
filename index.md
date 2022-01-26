@@ -275,4 +275,103 @@ Runtime Error 喜提 0 分。而且还用 gdb 调了整整一上午，仍然 Run
 
 于是我们就需要改一下我们的线段树的结构。
 
-考虑将所有边加入到一个整体的线段树中，
+考虑先直接不挂任何一条边，正常地进行线段树分治，当扫到某一个叶子节点时，判断这条边是否能够满足条件，如果不能满足，就将染后的颜色设置为染之前的颜色，并将这条边加到 $[now+1,nxt-1]$ 的区间里。
+
+具体实现还需要注意很多细节，在代码里会列举出来我当时 Wrong Answer 以及 Runtime Error 的错误。
+
+时间复杂度为 $O(n\log n\log k)$
+
+### 参考代码
+
+```c++ 
+#include<bits/stdc++.h>
+#define getchar()(p1==p2&&(p2=(p1=buf)+fread(buf,1,1<<21,stdin),p1==p2)?EOF:*p1++)
+using namespace std;
+typedef int van;
+char buf[1<<21],*p1=buf,*p2=buf;
+template<typename T> inline
+void read(T& x) {
+    T f=1,b=0;char ch=getchar();
+    while (!isdigit(ch)) {
+        if (ch=='-') f=-1;
+        ch=getchar();
+    } while (isdigit(ch)) 
+        b*=10,b+=ch-'0',ch=getchar();
+    x=f*b;return;
+}
+template<typename T> inline
+void print(T x,van jz=10) {
+    if (x<0) putchar('-'),x=-x;
+    if (x==0) {putchar('0');return;}
+    van st[21]={0},k=0;
+    while (x) st[++k]=x%jz,x/=jz;
+    for (int i=k;i>=1;i--) putchar(st[i]+'0');
+}
+const int MaxN=5e5+10;
+van n,m,k,q;
+van lx[MaxN],ly[MaxN];
+van lid[MaxN],col[MaxN],tend[MaxN];
+van nowcol[MaxN];
+vector<van> que[MaxN]; 
+struct Edge {
+	van x,y,col;bool add;
+	Edge(){};
+	Edge(van x,van y,van col,bool add):x(x),y(y),col(col),add(add){};
+}; Edge opst[MaxN*2];van top=0; // 注意这里是两倍数组，因为你每一次操作不仅要连接 u,v+n 还要连接 v,u+n 
+void restore();
+struct dsu {
+	van fa[MaxN*2],h[MaxN*2];
+	void init(van n) {for (int i=1;i<=n*2;i++) fa[i]=i;}
+	van find(van x) {return x==fa[x]?x:find(fa[x]);} // 不要路径压缩!!! 
+	void merge(van c,van a,van b) {
+		a=find(a),b=find(b);
+		if (h[a]<h[b]) swap(a,b);
+		fa[b]=a; opst[++top]=Edge(a,b,c,h[a]==h[b]);
+		if (h[a]==h[b]) h[a]++;
+	}
+	bool insert(van c,van a,van b) {
+		merge(c,a,b+n);merge(c,b,a+n);
+		if (find(a)==find(a+n)||find(b)==find(b+n)) return false;
+		return true;
+	}
+}S[51];
+void restore() {
+	van x=opst[top].x,y=opst[top].y,add=opst[top].add,col=opst[top].col;
+	S[col].fa[y]=y; S[col].h[x]-=add; top--;
+}
+struct SegmentTree {
+	vector<pair<van,van> > dat[MaxN*4];
+	void insert(van L,van R,van id,van col,van p=1,van l=1,van r=q) {
+		if (L>R) return; if (L<=l&&r<=R) return dat[p].push_back(make_pair(id,col));
+		van mid=(l+r)>>1; if (L<=mid) insert(L,R,id,col,p*2,l,mid);
+		if (R>mid) insert(L,R,id,col,p*2+1,mid+1,r);
+	}
+	void solve(van p=1,van l=1,van r=q) {
+		van tmp=top;
+		for (int i=0;i<dat[p].size();i++) {
+			van id=dat[p][i].first,col=dat[p][i].second;
+			assert(S[col].insert(col,lx[id],ly[id])); // 加进线段树的边一定是合法的 
+		} if (l==r) {
+			if (!S[col[l]].insert(col[l],lx[lid[l]],ly[lid[l]])) printf("NO\n");
+			else printf("YES\n"),nowcol[lid[l]]=col[l]; restore();restore(); // 每次判断后一定要将这两条边还原 
+			if (nowcol[lid[l]]) insert(l+1,tend[l]-1,lid[l],nowcol[lid[l]]); // 如果有颜色才能够插入进线段树中 
+		} else {
+			van mid=(l+r)>>1;
+			solve(p*2,l,mid);solve(p*2+1,mid+1,r);
+		} for (int i=0;i<dat[p].size();i++) restore(),restore();
+		assert(top==tmp); // 最后一定要把当前操作完全回溯完 
+	}
+}T; 
+int main() {
+	read(n),read(m),read(k),read(q);
+	for (int i=1;i<=k;i++) S[i].init(n);
+	for (int i=1;i<=m;i++) read(lx[i]),read(ly[i]);
+	for (int i=1;i<=q;i++) read(lid[i]),read(col[i]);
+	for (int i=1;i<=q;i++) que[lid[i]].push_back(i);
+	for (int i=1;i<=m;i++) {
+		for (int j=0;j<(int)que[i].size()-1;j++) 
+			tend[que[i][j]]=que[i][j+1];
+		if (que[i].size()>0) tend[que[i][(int)que[i].size()-1]]=q+1;
+	} T.solve(); return 0; 
+}
+```
