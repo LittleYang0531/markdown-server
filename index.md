@@ -1,1 +1,280 @@
-cmVxdWlyZSAnb2N0b2tpdC9jbGllbnQnCnJlcXVpcmUgJ29jdG9raXQvZW50\nZXJwcmlzZV9hZG1pbl9jbGllbnQnCnJlcXVpcmUgJ29jdG9raXQvZW50ZXJw\ncmlzZV9tYW5hZ2VtZW50X2NvbnNvbGVfY2xpZW50JwpyZXF1aXJlICdvY3Rv\na2l0L2RlZmF1bHQnCgojIFJ1YnkgdG9vbGtpdCBmb3IgdGhlIEdpdEh1YiBB\nUEkKbW9kdWxlIE9jdG9raXQKCiAgY2xhc3MgPDwgc2VsZgogICAgaW5jbHVk\nZSBPY3Rva2l0OjpDb25maWd1cmFibGUKCiAgICAjIEFQSSBjbGllbnQgYmFz\nZWQgb24gY29uZmlndXJlZCBvcHRpb25zIHtDb25maWd1cmFibGV9CiAgICAj\nCiAgICAjIEByZXR1cm4gW09jdG9raXQ6OkNsaWVudF0gQVBJIHdyYXBwZXIK\nICAgIGRlZiBjbGllbnQKICAgICAgcmV0dXJuIEBjbGllbnQgaWYgZGVmaW5l\nZD8oQGNsaWVudCkgJiYgQGNsaWVudC5zYW1lX29wdGlvbnM/KG9wdGlvbnMp\nCiAgICAgIEBjbGllbnQgPSBPY3Rva2l0OjpDbGllbnQubmV3KG9wdGlvbnMp\nCiAgICBlbmQKCiAgICAjIEVudGVycHJpc2VBZG1pbkNsaWVudCBjbGllbnQg\nYmFzZWQgb24gY29uZmlndXJlZCBvcHRpb25zIHtDb25maWd1cmFibGV9CiAg\nICAjCiAgICAjIEByZXR1cm4gW09jdG9raXQ6OkVudGVycHJpc2VBZG1pbkNs\naWVudF0gQVBJIHdyYXBwZXIKICAgIGRlZiBlbnRlcnByaXNlX2FkbWluX2Ns\naWVudAogICAgICByZXR1cm4gQGVudGVycHJpc2VfYWRtaW5fY2xpZW50IGlm\nIGRlZmluZWQ/KEBlbnRlcnByaXNlX2FkbWluX2NsaWVudCkgJiYgQGVudGVy\ncHJpc2VfYWRtaW5fY2xpZW50LnNhbWVfb3B0aW9ucz8ob3B0aW9ucykKICAg\nICAgQGVudGVycHJpc2VfYWRtaW5fY2xpZW50ID0gT2N0b2tpdDo6RW50ZXJw\ncmlzZUFkbWluQ2xpZW50Lm5ldyhvcHRpb25zKQogICAgZW5kCgogICAgIyBF\nbnRlcnByaXNlTWFuYWdlbWVudENvbnNvbGVDbGllbnQgY2xpZW50IGJhc2Vk\nIG9uIGNvbmZpZ3VyZWQgb3B0aW9ucyB7Q29uZmlndXJhYmxlfQogICAgIwog\nICAgIyBAcmV0dXJuIFtPY3Rva2l0OjpFbnRlcnByaXNlTWFuYWdlbWVudENv\nbnNvbGVDbGllbnRdIEFQSSB3cmFwcGVyCiAgICBkZWYgZW50ZXJwcmlzZV9t\nYW5hZ2VtZW50X2NvbnNvbGVfY2xpZW50CiAgICAgIHJldHVybiBAZW50ZXJw\ncmlzZV9tYW5hZ2VtZW50X2NvbnNvbGVfY2xpZW50IGlmIGRlZmluZWQ/KEBl\nbnRlcnByaXNlX21hbmFnZW1lbnRfY29uc29sZV9jbGllbnQpICYmIEBlbnRl\ncnByaXNlX21hbmFnZW1lbnRfY29uc29sZV9jbGllbnQuc2FtZV9vcHRpb25z\nPyhvcHRpb25zKQogICAgICBAZW50ZXJwcmlzZV9tYW5hZ2VtZW50X2NvbnNv\nbGVfY2xpZW50ID0gT2N0b2tpdDo6RW50ZXJwcmlzZU1hbmFnZW1lbnRDb25z\nb2xlQ2xpZW50Lm5ldyhvcHRpb25zKQogICAgZW5kCgogICAgcHJpdmF0ZQoK\nICAgIGRlZiByZXNwb25kX3RvX21pc3Npbmc/KG1ldGhvZF9uYW1lLCBpbmNs\ndWRlX3ByaXZhdGU9ZmFsc2UpCiAgICAgIGNsaWVudC5yZXNwb25kX3RvPyht\nZXRob2RfbmFtZSwgaW5jbHVkZV9wcml2YXRlKSB8fAogICAgICBlbnRlcnBy\naXNlX2FkbWluX2NsaWVudC5yZXNwb25kX3RvPyhtZXRob2RfbmFtZSwgaW5j\nbHVkZV9wcml2YXRlKSB8fAogICAgICBlbnRlcnByaXNlX21hbmFnZW1lbnRf\nY29uc29sZV9jbGllbnQucmVzcG9uZF90bz8obWV0aG9kX25hbWUsIGluY2x1\nZGVfcHJpdmF0ZSkKICAgIGVuZAoKICAgIGRlZiBtZXRob2RfbWlzc2luZyht\nZXRob2RfbmFtZSwgKmFyZ3MsICZibG9jaykKICAgICAgaWYgY2xpZW50LnJl\nc3BvbmRfdG8/KG1ldGhvZF9uYW1lKQogICAgICAgIHJldHVybiBjbGllbnQu\nc2VuZChtZXRob2RfbmFtZSwgKmFyZ3MsICZibG9jaykKICAgICAgZWxzaWYg\nZW50ZXJwcmlzZV9hZG1pbl9jbGllbnQucmVzcG9uZF90bz8obWV0aG9kX25h\nbWUpCiAgICAgICAgcmV0dXJuIGVudGVycHJpc2VfYWRtaW5fY2xpZW50LnNl\nbmQobWV0aG9kX25hbWUsICphcmdzLCAmYmxvY2spCiAgICAgIGVsc2lmIGVu\ndGVycHJpc2VfbWFuYWdlbWVudF9jb25zb2xlX2NsaWVudC5yZXNwb25kX3Rv\nPyhtZXRob2RfbmFtZSkKICAgICAgICByZXR1cm4gZW50ZXJwcmlzZV9tYW5h\nZ2VtZW50X2NvbnNvbGVfY2xpZW50LnNlbmQobWV0aG9kX25hbWUsICphcmdz\nLCAmYmxvY2spCiAgICAgIGVuZAoKICAgICAgc3VwZXIKICAgIGVuZAoKICBl\nbmQKZW5kCgpPY3Rva2l0LnNldHVwCg==
+# 线段树分治学习笔记
+
+线段树分治其实就是用基于时间的线段树存储有哪些会执行的操作，然后通过 DFS 中序遍历来扫描，扫描到的叶子节点到根节点上所有的存在的操作就是这个到这个时间所有要执行的操作。
+
+直接上板子题！
+
+## P5787 二分图 /【模板】线段树分治
+
+### 题目描述
+
+神犇有一个 $n$ 个节点的图。
+
+因为神犇是神犇，所以在 $k$ 时间内有 $m$ 条边会出现后消失。
+
+神犇要求出每一时间段内这个图是否是二分图。
+
+这么简单的问题神犇当然会做了，于是他想考考你。
+
+原 BZOJ4025。
+
+### 输入格式
+
+第一行三个整数 $n,m,k$。
+
+接下来 $m$ 行，每行四个整数 $x,y,l,r$，表示有一条连接 $x,y$ 的边在 $l$ 时刻出现 $r$ 时刻消失。
+
+### 输出格式
+
+$k$ 行，第 $i$ 行一个字符串 `Yes` 或 `No`，表示在第 $i$ 时间段内这个图是否是二分图。
+
+### 数据范围
+
+$n,k=10^5$，$m=2\times 10^5$。$1 \le x,y \le n$，$0 \le l \le r \le k$。
+
+### 题目分析
+
+由标题可知，此题我们需要用到线段树分治。在建树时，对于每一个区间，可以在加入到线段树的时候，分成若干个区间，然后加入到刚好能够完全覆盖的区间对应的节点里。
+
+对于样例建树后的结果如下
+
+![](https://cdn.luogu.com.cn/upload/image_hosting/p2fgmu5l.png)
+
+具体代码如下
+
+```c++
+void insert(van L,van R,van num,van p=1,van l=1,van r=k) {
+    if (L<=l&&r<=R){data[p].push_back(num);return;}
+    van mid=(l+r)>>1;if (L<=mid) insert(L,R,num,p*2,l,mid);
+    if (R>mid) insert(L,R,num,p*2+1,mid+1,r);
+}
+```
+
+此题还需要我们判断二分图，普通的判断肯定是不行的，因此我们可以使用**扩展域并查集**来快速的判断。
+
+对于中序遍历需要撤销之前的操作，我们可以使用**按秩合并并查集**来进行快速的撤销。
+
+#### **扩展域并查集**
+
+具体思路是对于每一个节点 $i$，新建一个 $i+n$ 的节点，表示这两个点是相对的两个点。如果这两个点处于了同一个集合中，就说明这并不是一个二分图。
+
+当新建一条边时，可以发现，这条边上的两个节点一定是相对的，由于相对的节点的相对的节点应该和自己在同一集合中，因此我们可以将 $x$ 和 $y+n$ 以及 $y $ 和 $x+n$ 连起来。每次操作结束后，判断一下是否处于同一个二分图中即可。
+
+#### **按秩合并并查集**
+
+由于在进行中序遍历时，回退到父亲节点需要执行回溯操作。我们可以将某一个节点已经执行过的操作存在一个栈中，回溯时将栈中在这个节点上执行的操作全部撤销即可。
+
+对于撤销操作，我们所使用的并查集不能进行路径压缩，而是对每一条边加上一个秩，这个秩可以是树的高度。合并时，将矮的树合并到高的树上面去，并且更新高的树现在的高度。撤销时，将被合并的树的原来的高度还原回去，并将原来矮的那棵树的父亲节点重新定义为自己。
+
+注意: 千万不能使用**路径压缩**，因为使用了路径压缩后子节点就会直接被接到更上面的节点去，撤销时就不能还原到原来的状态去。(不知道有哪个傻批遭了一次还要再遭一次)。
+
+综上，我们就可以在 $O(n\log k\log n)$ 的时间复杂度内 A 掉此题。
+
+### 参考代码 
+
+3.17s / 77.02MB / 2.44KB C++14
+
+```c++
+#include<bits/stdc++.h>
+#define getchar()(p1==p2&&(p2=(p1=buf)+fread(buf,1,1<<21,stdin),p1==p2)?EOF:*p1++)
+using namespace std;
+typedef long long van;
+char buf[1<<21],*p1=buf,*p2=buf;
+template<typename T> inline
+void read(T& x) {
+    T f=1,b=0;char ch=getchar();
+    while (!isdigit(ch)) {
+        if (ch=='-') f=-1;
+        ch=getchar();
+    } while (isdigit(ch)) 
+        b*=10,b+=ch-'0',ch=getchar();
+    x=f*b;return;
+}
+template<typename T> inline
+void print(T x,van jz=10) {
+    if (x<0) putchar('-'),x=-x;
+    if (x==0) {putchar('0');return;}
+    van st[21]={0},k=0;
+    while (x) st[++k]=x%jz,x/=jz;
+    for (int i=k;i>=1;i--) putchar(st[i]+'0');
+}
+const van MaxN=4e5+10;van n,m,k,ans;
+van x[MaxN],y[MaxN],s[MaxN],e[MaxN];
+bool state_st[MaxN];
+vector<van> data[MaxN*2];
+struct sta {
+	van x,y;bool ok=true;
+	sta(){};
+	sta(van x,van y,bool ok):x(x),y(y),ok(ok){};
+};
+sta opst[MaxN];van top=0;
+struct Edge {
+    van x,y;
+    Edge(){};
+    Edge(van x,van y):x(x),y(y){};
+}E[MaxN*2];
+bool ok=true;
+struct SegmentTree {
+    struct dsu {
+        van fa[MaxN*2],w[MaxN*2];
+        void init(van n) {for (int i=1;i<=n*2;i++) fa[i]=i;}
+        van query(van x) {return x==fa[x]?x:query(fa[x]);}
+        void insert(van x,van y) {
+        	x=query(x),y=query(y);
+        	if (w[x]<w[y]) swap(x,y);
+        	fa[y]=x;opst[++top]=sta(x,y,w[x]==w[y]);
+        	if (w[x]==w[y]) w[x]++;
+		} 
+    }S;
+    void Insert(van x,van y) {
+    	S.insert(x,y+n);S.insert(y,x+n);
+    	if (S.query(x)==S.query(x+n)||S.query(y)==S.query(y+n)) ok=false;
+	}
+    void restore() {
+		van x=opst[top].x,y=opst[top].y;
+		S.w[S.fa[y]]-=opst[top--].ok;S.fa[y]=y;
+	}
+    void insert(van L,van R,van num,van p=1,van l=1,van r=k) {
+        if (L<=l&&r<=R){data[p].push_back(num);return;}
+        van mid=(l+r)>>1;if (L<=mid) insert(L,R,num,p*2,l,mid);
+        if (R>mid) insert(L,R,num,p*2+1,mid+1,r);
+    }
+    void solve(van now=1,van l=1,van r=k) {
+		bool tmpok=ok;
+        for (int i=0;i<data[now].size();i++) 
+            Insert(E[data[now][i]].x,E[data[now][i]].y);
+		if (l==r&&l!=k) puts(ok?"Yes":"No");
+        else if (l!=r||l!=k) solve(now*2,l,(l+r)>>1),solve(now*2+1,(l+r)/2+1,r);
+        for (int i=0;i<data[now].size();i++) restore(),restore();
+        ok=tmpok;
+    }
+}T;
+int main() {
+    read(n),read(m),read(k);
+	T.S.init(n);k++;
+    for (int i=1;i<=m;i++) read(x[i]),read(y[i]),read(s[i]),read(e[i]),s[i]++,e[i]++;
+    for (int i=1;i<=m;i++) E[i]=Edge(x[i],y[i]),T.insert(s[i],e[i]-1,i);
+    T.solve();return 0;
+}
+```
+
+# CF576E Painting Edges
+
+### 题目描述
+
+Note the unusual memory limit for this problem.
+
+You are given an undirected graph consisting of $n$ vertices and $m$ edges. The vertices are numbered with integers from 1 to $n$ , the edges are numbered with integers from 1 to $m$ . Each edge can be unpainted or be painted in one of the $k$ colors, which are numbered with integers from 1 to $k$ . Initially, none of the edges is painted in any of the colors.
+
+You get queries of the form "Repaint edge $e_{i}$ to color $c_{i}$ ". At any time the graph formed by the edges of the same color must be bipartite. If after the repaint this condition is violated, then the query is considered to be invalid and edge $e_{i}$ keeps its color. Otherwise, edge $e_{i}$ is repainted in color $c_{i}$ , and the query is considered to valid.
+
+Recall that the graph is called bipartite if the set of its vertices can be divided into two parts so that no edge connected vertices of the same parts.
+
+For example, suppose you are given a triangle graph, that is a graph with three vertices and edges $(1,2)$ , $(2,3)$ and $(3,1)$ . Suppose that the first two edges are painted color 1 , and the third one is painted color 2 . Then the query of "repaint the third edge in color 1 " will be incorrect because after its execution the graph formed by the edges of color 1 will not be bipartite. On the other hand, it is possible to repaint the second edge in color 2 .
+
+You receive $q$ queries. For each query, you should either apply it, and report that the query is valid, or report that the query is invalid.
+
+### 输入描述
+
+The first line contains integers $n$ , $m$ , $k$ , $q$ ( $2\leq n\leq 5·10^{5}$ , $1\leq m,q\leq 5⋅10^5$ , $1\leq k\leq 50$ ) — the number of vertices, the number of edges, the number of colors and the number of queries.
+
+Then follow m*m* edges of the graph in the form $a_{i}$ , $b_{i}$ ( $1\leq a_{i},b_{i}\leq n$ ).
+
+Then follow q*q* queries of the form $e_{i}$ , $c_{i}$ ( $1\leq e_{i}\leq m$ , $1\leq c_{i}\leq k$ ).
+
+It is guaranteed that the graph doesn't contain multiple edges and loops.
+
+### 输出描述
+
+For each query print "YES" (without the quotes), if it is valid, or "NO" (without the quotes), if this query destroys the bipartivity of the graph formed by the edges of some color.
+
+### 数据范围
+
+$n,m,q\leq 5\times 10^5$ , $k\leq 50$
+
+### 题目分析
+
+首先第一步想到的就是使用 50 个线段树分治，后来想一想对于每个询问，如果被放进去了中途是不会撤回的，很自然而然的想到只需要使用扩展域并查集就行了，然后就写了如下代码: 
+
+ 30ms / 399.52MB / 2.09KB C++14
+
+```c++
+#include<bits/stdc++.h>
+using namespace std;
+#define getchar()(p1==p2&&(p2=(p1=buf)+fread(buf,1,1<<21,stdin),p1==p2)?EOF:*p1++)
+//#define r() read(xxx)
+typedef int van; van xxx;
+char buf[1<<21],*p1=buf,*p2=buf;
+template<typename T> inline
+T read(T& x) {
+    T f=1,b=0;char ch=getchar();
+    while (!isdigit(ch)) {
+        if (ch=='-') f=-1;
+        ch=getchar();
+    } while (isdigit(ch)) 
+        b*=10,b+=ch-'0',ch=getchar();
+    x=f*b;return x;
+}
+template<typename T> inline
+void print(T x,van jz=10) {
+    if (x<0) putchar('-'),x=-x;
+    if (x==0) {putchar('0');return;}
+    van st[21]={0},k=0;
+    while (x) st[++k]=x%jz,x/=jz;
+    for (int i=k;i>=1;i--) putchar(st[i]+'0');
+}
+const van MaxN=5e5+10;
+struct Edge {
+	van x,y,col;bool add;
+	Edge(){};
+	Edge(van x,van y,van col,bool add):x(x),y(y),col(col),add(add){};
+};
+van n,m,k,q;
+vector<Edge> e;
+bool aaa;
+//struct SegmentTree {
+	Edge opst[MaxN];van top=0;
+	van fa[51][MaxN*2],w[51][MaxN*2];
+	void init(van col,van n) {for (int i=1;i<=2*n;i++) fa[col][i]=i;}
+	van query(van col,van x) {return x==fa[col][x]?x:query(col,fa[col][x]);}
+	void Insert(van col,van a,van b) {
+		a=query(col,a),b=query(col,b);
+		if (w[col][a]<w[col][b]) swap(a,b);
+		fa[col][b]=a;opst[++top]=Edge(a,b,col,w[col][a]==w[col][b]);
+		if (w[col][a]==w[col][b]) w[col][a]++;
+	}
+	void restore() {
+		van x=opst[top].x,y=opst[top].y;bool add=opst[top].add;van col=opst[top].col;
+		fa[col][y]=y;w[col][x]-=add;top--;
+	}
+	bool insert(van col,van a,van b) {
+		Insert(col,a,b+n);Insert(col,a+n,b);
+		if (query(col,a)==query(col,a+n)||query(col,b)==query(col,b+n)) {
+			restore();restore(); return false;
+		} else return true;
+	}
+//}T[51];
+bool bbb;
+int main() {
+//	cout<<(&bbb-&aaa)/1024.0/1024.0<<"MB"<<endl;
+//	n=r(),m=r(),k=r(),q=r();
+	cin>>n>>m>>k>>q;
+//	for (int i=1;i<=m;i++) e.push_back(Edge(r(),r(),0,0));
+	for (int i=1;i<=m;i++) {
+		van a,b;cin>>a>>b;
+		e.push_back(Edge(a,b,0,0));
+	} for (int i=1;i<=50;i++) init(i,n);
+	for (int i=1;i<=q;i++) {
+		van id,col;cin>>id>>col;id--;
+		puts(insert(col,e[id].x,e[id].y)?"YES":"NO");
+	}
+}
+```
+
+Runtime Error 喜提 0 分。而且还用 gdb 调了整整一上午，仍然 Runtime Error。
+
+后来发现，对于同一条边，如果我们根据上述思路来走，会发现两次询问就会产生出 2 条边，三次就会产生出 3 条边，...... 这是显然不符合题意的，因此我们只能通过考虑一条边的颜色变化就可以通过线段树分支的板子来套了。
+
+但是对于一次询问，有可能是不会作用到这条边上的，所以我们只能边算边加边。
+
+于是我们就需要改一下我们的线段树的结构。
