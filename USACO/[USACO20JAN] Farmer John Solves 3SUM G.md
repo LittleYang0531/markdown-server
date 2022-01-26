@@ -1,5 +1,3 @@
-[Pixiv: 77171026]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/77171026_p0.jpg'
-
 ## [USACO20JAN] Farmer John Solves 3SUM G 做题记录
 
 ### 题目描述:
