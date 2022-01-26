@@ -1,5 +1,3 @@
-[pixiv: 92771524]: # 'https://cdn.jsdelivr.net/gh/LittleYang0531/image/blog/cover/92771524_p0_master1200.jpg'
-
 # COCI2020-2021#1 做题记录
 
 ## T1 Patkice
