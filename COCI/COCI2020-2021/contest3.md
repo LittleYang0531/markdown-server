@@ -1,5 +1,3 @@
-[Pixiv: 92260993]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/92260993_p0.png'
-
 # COCI2020-2021#3 做题记录
 
 ## T1 Knjige
