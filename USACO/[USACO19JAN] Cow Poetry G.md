@@ -1,5 +1,3 @@
-[Pixiv: 83105924]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/83105924_p0.jpg'
-
 ## [USACO19JAN] Cow Poetry G 做题记录
 
 ### 题目描述:
