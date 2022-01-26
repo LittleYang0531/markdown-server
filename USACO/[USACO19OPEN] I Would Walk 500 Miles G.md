@@ -1,5 +1,3 @@
-[Pixiv: 80193800]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/80193800_p0.png'
-
 ## [USACO19OPEN] I Would Walk 500 Miles G 做题记录
 
 ### 题目描述:
