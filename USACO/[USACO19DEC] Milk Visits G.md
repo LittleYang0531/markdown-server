@@ -1,5 +1,3 @@
-[Pixiv: 86036508]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/86036508_p0.png'
-
 ## [USACO19DEC] Milk Visits G 做题记录
 
 ### 题目描述:
