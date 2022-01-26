@@ -1,5 +1,3 @@
-[Pixiv: 85035742]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/85035742_p0.png'
-
 ## [USACO19FEB] Painting the Barn G 做题记录
 
 ### 题目描述:
