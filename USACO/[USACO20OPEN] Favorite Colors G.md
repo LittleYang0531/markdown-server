@@ -1,5 +1,3 @@
-[Pixiv: 69646857]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/69646857_p0.jpg'
-
 ## [USACO20OPEN] Favorite Colors G 做题记录
 
 ### 题目描述:
