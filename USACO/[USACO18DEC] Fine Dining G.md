@@ -1,5 +1,3 @@
-[Pixiv: 87020534]: 'https://cdn.jsdelivr.net/gh/LittleYang0531/Photo/87020534_p0.jpg'
-
 ## [USACO18DEC] Fine Dining G 做题记录
 
 ### 题目描述:
