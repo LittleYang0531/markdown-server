@@ -10,7 +10,7 @@ Termux 是一款能够让你在手机上使用命令行的软件。通过该软�
 
 ### Termux 对系统的限制
 
-任何 **Android** 系统都可以使用 Termux，只要你能选择合适的版本装到你的手机上即可。Termux 似乎并没有 iOS 版本。如果读者想使用你的 iOS 手机上的命令行的话，请选择 iSH Shell。由于作者家里并无资金购买价格较昂贵的 iPhone 手机，因此本文在此不做 iSH Shell 的讨论。
+任何 **Android** 系统都可以使用 Termux，只要你能选择合适的版本装到你的手机上即可。Termux 似乎并没有 iOS 版本。如果读者想使用 iOS 手机上的命令行的话，请选择 iSH Shell。由于作者家里并无资金购买价格较昂贵的 iPhone 手机，因此本文在此不做 iSH Shell 的讨论。
 
 备注: 作者未测试过 iSH Shell，因此请读者谨慎选择 iSH Shell，所导致的后果由读者自行承担。
 
