@@ -1,7 +1,5 @@
 # 你好，Termux!
 
-[TOM]
-
 ## 前言
 
 ### Termux 是啥?
