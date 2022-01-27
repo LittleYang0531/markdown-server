@@ -39,6 +39,6 @@ Termux 是一款能够让你在手机上使用命令行的软件。通过该软�
 
 请读者自行百度 Termux，跳出来的第一项就是 Termux 的官网。
 
-你有三种途径来下载 Termux: F-droid，Google Play，。个人推荐使用 F-droid 进行下载，因为酷安的网速还是比较快的。
+你有三种途径来下载 Termux: F-Droid，Google Play，。个人推荐使用 F-Droid 进行下载，因为 F-Droid 的网速还是比较快的。
 
 
