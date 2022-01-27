@@ -53,11 +53,23 @@ Termux 是一款能够让你在手机上使用命令行的软件。通过该软�
 
 ## Termux 的基本操作
 
+### 字体调节
+
+觉得字体太小，看不清楚？Termux 支持对命令行字体的调节，而且就和缩放图片一样简单。
+
+什么，你说怎么调节？和缩放图片一样就行了啊。
+
+### 软件包安装
+
 Termux 使用的是 pkg 软件包管理器，如果读者熟悉 apt 也是可以使用的。在此推荐使用 apt 软件包管理器，毕竟我们一般会使用的 Linux 发行版用的绝大多数还是 apt 软件包管理器，而且 pkg 和 apt 在大多数操作上还是一致的。
 
-以下是 apt 软件包管理器的大致用法，Ubuntu/Debian 用法一致:
+以下是 apt 软件包管理器的大致用法，Ubuntu/Debian 用法一致 (~~笑死，本 APT 具有超级牛力~~)，读者也可以输入 `apt help` 来获得这些帮助:
 ```bash
 Usage: apt [options] command
+
+命令行软件包管理器 apt 提供软件包搜索，管理和信息查询等功能。
+它提供的功能与其他 APT 工具相同（像 apt-get 和 apt-cache），
+但是默认情况下被设置得更适合交互。
 
 最常使用的 command:
   list - 根据名称列出软件包
@@ -72,5 +84,11 @@ Usage: apt [options] command
   full-upgrade - 通过 卸载/安装/升级 来更新系统
   edit-sources - 编辑软件源信息文件
   satisfy - 使系统满足依赖关系字符串
+  
+参见 apt(8) 以获取更多关于可用命令的信息。
+程序配置选项及语法都已经在 apt.conf(5) 中阐明。
+欲知如何配置软件源，请参阅 sources.list(5)。
+软件包及其版本偏好可以通过 apt_preferences(5) 来设置。
+关于安全方面的细节可以参考 apt-secure(8).
+                                           本 APT 具有超级牛力。
 ```
-
