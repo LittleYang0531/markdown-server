@@ -227,4 +227,49 @@ tmoe 不仅有很强大的 Linux 一键安装功能，还有更多的针对于 A
 
 由于 FTP 依赖的是 21/20 端口，而 proot 并不允许我们使用 1024 及以下的端口，因此我们需要修改 FTP 运行的端口才能正常地使用 FTP 的服务。
 
-首先
+首先安装 vsftpd 以支持我们的 ftp 服务:
+
+```bash
+apt install vsftpd
+```
+
+顺带说一句，Ubuntu 并不支持 pkg 指令，因此如果读者使用的是 pkg 指令，请自行熟练对 apt 指令的使用。
+
+接下来，我们需要配置 vsftpd 来修改我们 FTP 运行的端口以及 FTP 的根目录等重要配置。
+
+请注意 vsftpd 的配置文件为 `/etc/vsftpd.conf` 而不是网上普遍的 `/etc/vsftpd/vsftpd.conf`。
+
+使用 vim 等文本编辑器来编辑 vsftpd 的配置文件，如果没有文本编辑器的话可以自己安装一个，接下来的操作我们可能还需要用到。
+
+接下来，您需要修改 / 添加以下配置: 
+
+```bash
+# 必须配置
+listen=YES # 如果您家使用的是 ipv4 网络，则需要开启此配置
+listen_ipv6=NO # 如果您家支持 ipv6 网络，则需要开启此配置
+listen_port=8021 # ftp 监听端口，您可以修改为任意大于 1024 的端口号
+connect_from_port_20=NO
+ftp_data_port=8020 # ftp 数据端口，您可以修改为任意大于 1024 的端口号
+secure_chroot_dir=/var/run/vsftpd/empty
+allow_writeable_chroot=YES
+
+# 被动模式配置
+pasv_enable=YES
+pasv_min_port=10001 # ftp 被动模式最小端口
+pasv_max_port=10003 # ftp 被动模式最大端口
+pasv_promiscuous=YES
+
+# 可选配置
+local_root=/root/ # 根目录
+utf8_filesystem=YES # UTF8 编码支持
+ftp_banner=Welcome to my FTP server. # 登录欢迎语
+anonymous_enable=NO # 是否允许匿名登陆
+local_enable=YES # 是否允许以本地账户登录
+write_enable=YES # 是否给予本地账户权限
+```
+
+当然还有其他更多的可选配置，读者可以自行百度搜索。
+
+接下来输入 `service vsftpd start` 来启动您的 ftp 服务器。
+
+顺带一提，`systemctl` 指令在该
