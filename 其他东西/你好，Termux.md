@@ -223,6 +223,56 @@ tmoe 不仅有很强大的 Linux 一键安装功能，还有更多的针对于 A
 
 接下来的教程是依赖于 Ubuntu 20.04 LTS arm64 版本的，其他 Linux 版本的操作方法的本质相同，在此不过多解释。
 
+### 网站的搭建
+
+要想运行一个网站，首先就需要有网站的源码包和能够运行网站的软件包，还要配置各种能够和网站进行交互的 cgi 程序。源码包根据自己需求到网上随便找一个就行了，对于能够运行网站的软件包，选择 `nginx`，`apache` 等都可以。在此，作者使用 `nginx`+`mysql`+`php`+`C++` 来搭建一个 Online Judge。
+
+本教程将使用 `php` 作为前端语言打造 GUI，`C++` 作为后端语言运行程序。
+
+如果读者有其他的需要，也可以自行更换前端或后端语言，不过
+
+首先安装 `nginx`,`mysql`,`php`,`C++` 的软件包:
+
+```bash
+apt install nginx mysql php g++ 
+```
+
+由于需要用到 `mysql` 和 `json` 来进行交互，因此我们还需要安装必要的底层插件包
+
+```bash
+apt install php-mysql libmysqlclient libjsoncpp
+```
+
+接下来，解压自己网站的源码包，记住根目录的绝对路径，然后打开 `/etc/nginx/sites-enabled/default` 进行配置: 
+
+```bash
+server {
+	# 必须配置
+	listen 8080;
+	listen [::]:8080;
+	root /etc/judge/web; # 根目录的绝对路径
+	client_max_body_size 100m; # 最大上传文件大小
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+	}
+	
+	# 可选配置
+	location @rewrite { # url 重写配置
+		rewrite ^(/index.php)+(.*)$ /index.php?path=error&err=404%20Not%Found;
+		rewrite ^([/])+([^.?]+)+([?])+(.*)$ /index.php?path=$2&$4;
+		rewrite ^([/])+([^.?]+)$ /index.php?path=$2;
+	}
+	location / {
+		try_files $url $url/ @rewrite;
+		error_page 404 /index.php?path=error&err=404%20Not%20Found;
+		error_page 403 /index.php?path=error&err=403%20Forbidden;
+	}
+}
+```
+
+运行 `service nginx start` 以运行
+
 ### FTP 的安装
 
 由于 FTP 依赖的是 21/20 端口，而 proot 并不允许我们使用 1024 及以下的端口，因此我们需要修改 FTP 运行的端口才能正常地使用 FTP 的服务。
@@ -273,6 +323,8 @@ write_enable=YES # 是否给予本地账户权限
 接下来输入 `service vsftpd start` 来启动您的 ftp 服务器。
 
 顺带一提，`systemctl` 指令在该系统下是不可用的，因此您只能使用 `system` 指令来管理您的服务。
+
+在 Windows 下输入 `ftp://用户名:密码@ip:ftp监听端口` 即可访问您的 ftp 服务器。
 
 ### 图形桌面的安装
 
