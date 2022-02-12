@@ -36,11 +36,17 @@ Termux 是一款能够让你在手机上使用命令行的软件。通过该软�
 
 请读者自行百度 Termux，跳出来的第一项就是 Termux 的官网。
 
+![](https://cdn.jsdelivr.net/gh/LittleYang0531/image/luogu/blog/10/1.jpg)
+
 你有三种途径来下载 Termux: F-Droid，Google Play 和酷安。个人推荐使用 F-Droid 进行下载，因为 F-Droid 并不需要使用梯子就能访问，而且网速还能够接受（毕竟是国外的网站嘛）,官网也推荐的是这种方法。注意不要下成 F-Droid 的安装包了！
 
 下载好后，点击 com_termux_xxx.apk 进行 Termux 的安装。安装过程在此省略。
 
-接下来，点开 Termux，进入命令行的主界面，读者可能会遇到 'Unable to install' 的问题。这是因为 Termux 在第一次开启时需要从远程服务器加载数据，而远程服务器在国内可能无法访问。不过现在问题应该已经解决了（反正作者一次都没遇到过），如果读者遇到了此问题，有三种方法可供参考: 
+接下来，点开 Termux，进入命令行的主界面，读者可能会遇到 'Unable to install' 的问题。
+
+![](https://cdn.jsdelivr.net/gh/LittleYang0531/image/luogu/blog/10/2.jpg)
+
+这是因为 Termux 在第一次开启时需要从远程服务器加载数据，而远程服务器在国内可能无法访问。不过现在问题应该已经解决了（反正作者一次都没遇到过），如果读者遇到了此问题，有三种方法可供参考: 
 
 1. 梯子梯子梯子!!!
 2. 如果用的 wifi，可以尝试切换成运营商流量
@@ -60,11 +66,18 @@ Termux 是一款能够让你在手机上使用命令行的软件。通过该软�
 
 从您手机的最左侧向右滑，会跳出来一个白色的框框，再点击白色框框右下角的 'NEW SESSION'，就可以新建一个任务窗口了。
 
+![](https://cdn.jsdelivr.net/gh/LittleYang0531/image/luogu/blog/10/3.jpg)
+
+### 删除窗口
+
+输入 `exit` 即可删除当前窗口。
+
 ### 软件包安装
 
 Termux 使用的是 pkg 软件包管理器，如果读者熟悉 apt 也是可以使用的。在此推荐使用 apt 软件包管理器，毕竟我们一般会使用的 Linux 发行版用的绝大多数还是 apt 软件包管理器，而且 pkg 和 apt 在大多数操作上还是一致的。
 
 以下是 apt 软件包管理器的大致用法，Ubuntu/Debian 用法一致 (~~笑死，本 APT 具有超级牛力~~)，读者也可以输入 `apt help` 来获得这些帮助:
+
 ```bash
 Usage: apt [options] command
 
@@ -94,6 +107,8 @@ Usage: apt [options] command
                                            本 APT 具有超级牛力。
 ```
 
+![](https://raw.githubusercontent.com/LittleYang0531/image/main/luogu/blog/10/4.jpg)
+
 ### 自定义快捷栏
 
 快捷栏是什么？就是你手机键盘上面的那一圈黑色的框框。但是有些我们常用的快捷键并没有显示，因此就有了可以自定义您快捷栏的方法。
@@ -112,6 +127,8 @@ vim ~/.termux/termux.properties
 extra-keys=[['ESC','-','/','HOME','UP','END','PGUP','DEL'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN','BKSP']]
 ```
 
+![](https://cdn.jsdelivr.net/gh/LittleYang0531/image/luogu/blog/10/5.jpg)
+
 重启 Termux，您就应该能看到新的快捷栏了。
 
 ### 启动提示
@@ -125,6 +142,8 @@ vim ~/../usr/etc/motd
 ```
 
 打开文件后，随意修改为自己想要的提示语即可。
+
+![](https://cdn.jsdelivr.net/gh/LittleYang0531/image/luogu/blog/10/6.jpg)
 
 ### 快捷键
 
