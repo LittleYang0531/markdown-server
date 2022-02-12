@@ -235,7 +235,9 @@ tmoe 不仅有很强大的 Linux 一键安装功能，还有更多的针对于 A
 apt install nginx
 ```
 
-接下来，解压自己网站的源码包，记住根目录的绝对路径，然后打开 `/etc/nginx/sites-enabled/default` 进行配置: 
+顺带说一句，Ubuntu 并不支持 pkg 指令，因此如果读者使用的是 pkg 指令，请自行熟练对 apt 指令的使用。
+
+接下来，解压自己网站的源码包，记住根目录的绝对路径。然后用 vim 等文本编辑器打开 `/etc/nginx/sites-enabled/default` 进行配置，如果没有文本编辑器的话可以自己安装一个，接下来的操作我们可能还需要用到。
 
 ```bash
 server {
@@ -265,7 +267,7 @@ server {
 
 输入 `service nginx start` 以运行 `nginx`。
 
-接下来，在浏览器中输入 `http://ip:`
+接下来，在浏览器中输入 `http://ip:端口号` 就可以看到自己的网站了。
 
 ### FTP 的安装
 
@@ -277,13 +279,9 @@ server {
 apt install vsftpd
 ```
 
-顺带说一句，Ubuntu 并不支持 pkg 指令，因此如果读者使用的是 pkg 指令，请自行熟练对 apt 指令的使用。
-
 接下来，我们需要配置 vsftpd 来修改我们 FTP 运行的端口以及 FTP 的根目录等重要配置。
 
 请注意 vsftpd 的配置文件为 `/etc/vsftpd.conf` 而不是网上普遍的 `/etc/vsftpd/vsftpd.conf`。
-
-使用 vim 等文本编辑器来编辑 vsftpd 的配置文件，如果没有文本编辑器的话可以自己安装一个，接下来的操作我们可能还需要用到。
 
 接下来，您需要修改 / 添加以下配置: 
 
