@@ -225,16 +225,16 @@ tmoe 不仅有很强大的 Linux 一键安装功能，还有更多的针对于 A
 
 ### 网站的搭建
 
-要想运行一个网站，首先就需要有网站的源码包和能够运行网站的软件包，还要配置各种能够和网站进行交互的 cgi 程序。源码包根据自己需求到网上随便找一个就行了，对于能够运行网站的软件包，选择 `nginx`，`apache` 等都可以。在此，作者使用 `nginx`+`mysql`+`php`+`C++` 来搭建一个 Online Judge。
+要想运行一个网站，首先就需要有网站的源码包和能够运行网站的软件包，还要配置各种能够和网站进行交互的 cgi 程序。源码包根据自己需求到网上随便找一个就行了，对于能够运行网站的软件包，选择 `nginx`，`apache` 等都可以。在此，作者使用 `nginx`+`mariadb`+`php`+`C++` 来搭建一个 Online Judge。
 
 本教程将使用 `php` 作为前端语言打造 GUI，`C++` 作为后端语言运行程序。
 
-如果读者有其他的需要，也可以自行更换前端或后端语言，不过
+如果读者有其他的需要，也可以自行更换前端或后端语言，不过需要自行根据源代码的作者的要求来配置各种各样的 cgi 程序 (大家都是学信息竞赛的应该举一反三没有问题吧)。
 
-首先安装 `nginx`,`mysql`,`php`,`C++` 的软件包:
+首先安装 `nginx`,`mariadb-server`,`mariadb-client`,`php`,`C++` 的软件包:
 
 ```bash
-apt install nginx mysql php g++ 
+apt install nginx mariad php php-fpm g++ 
 ```
 
 由于需要用到 `mysql` 和 `json` 来进行交互，因此我们还需要安装必要的底层插件包
@@ -271,7 +271,11 @@ server {
 }
 ```
 
-运行 `service nginx start` 以运行
+运行 `service nginx start` 以运行 `nginx`。
+
+`mariadb` 和 `php` 的配置同正常的 Linux 相同，在网上都能找到相应的教程，为了节省篇幅，在此不做解释。
+
+运行 ``
 
 ### FTP 的安装
 
